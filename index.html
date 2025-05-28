@@ -11,13 +11,12 @@
             padding: 0;
             height: 100%;
             width: 100%;
-            overflow: hidden;
+            overflow: hidden; 
         }
 
         body {
             font-family: Arial, sans-serif;
-            /* Caminho atualizado para a imagem na pasta public */
-            background-image: url('/public/sitetestebia.png');
+            background-image: url('/sitetestebia.png'); /* caminho atualizado */
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
@@ -36,15 +35,15 @@
             text-align: center;
             max-width: 400px;
             width: 90%;
-            margin-top: 225px;
+            margin-top: 225px; 
             padding-bottom: 50px;
         }
 
         .link-button, .action-button {
             display: block;
-            width: 100%;
+            width: 100%; 
             padding: 15px 20px;
-            margin: 15px 0;
+            margin: 15px 0; 
             text-decoration: none;
             color: #fff;
             border: none;
@@ -52,12 +51,12 @@
             font-size: 1.1em;
             cursor: pointer;
             transition: transform 0.2s ease, background-color 0.3s ease;
-            box-sizing: border-box;
+            box-sizing: border-box; 
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
         }
 
         .link-button:hover, .action-button:hover {
-            transform: scale(1.03);
+            transform: scale(1.03); 
         }
 
         .whatsapp-button { background-color: #25D366; }
@@ -69,12 +68,13 @@
 
         /* TELA DO PORTFÓLIO */
         #tela-portfolio {
-            display: none;
+            display: none; 
             position: fixed;
-            top: 0; left: 0;
-            width: 100vw; height: 100vh;
-            background-color: rgba(0,0,0,0.5);
-            z-index: 100;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background-color: rgba(0,0,0,0.5); 
         }
 
         #tela-portfolio iframe {
@@ -93,23 +93,22 @@
             border: none;
             border-radius: 5px;
             cursor: pointer;
-            z-index: 101;
+            z-index: 10;
             box-shadow: 0 2px 5px rgba(0,0,0,0.2);
         }
     </style>
 </head>
 <body>
-
     <div id="tela-botoes">
         <div class="container">
             <a href="https://api.whatsapp.com/send/?phone=5573988669463&text=Ol%C3%A1%21+Vim+pelo+Instagram+e+gostaria+de+conhecer+seu+or%C3%A7amento.&type=phone_number&app_absent=0" target="_blank" class="link-button whatsapp-button">
                 Fale Conosco no WhatsApp
             </a>
-
+            
             <a href="https://www.instagram.com/bs_studio01/" target="_blank" class="link-button instagram-button">
                 Acessar Instagram
             </a>
-
+            
             <button onclick="mostrarPortfolio()" class="action-button portfolio-button">
                 Ver Portfólio
             </button>
@@ -118,8 +117,7 @@
 
     <div id="tela-portfolio">
         <button onclick="mostrarBotoes()" class="voltar-button">Voltar</button>
-        <!-- Caminho atualizado para o PDF dentro da pasta public -->
-        <iframe src="/public/portfolio.pdf"></iframe>
+        <iframe src="/portfolio.pdf"></iframe> <!-- caminho atualizado -->
     </div>
 
     <script>
@@ -136,6 +134,5 @@
             telaBotoes.style.display = 'flex';
         }
     </script>
-
 </body>
 </html>
