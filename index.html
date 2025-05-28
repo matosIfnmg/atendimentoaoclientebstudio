@@ -16,7 +16,8 @@
 
         body {
             font-family: Arial, sans-serif;
-            background-image: url('public/sitetestebia.png');
+            /* Caminho atualizado para a imagem na pasta public */
+            background-image: url('/public/sitetestebia.png');
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
@@ -70,11 +71,10 @@
         #tela-portfolio {
             display: none;
             position: fixed;
-            top: 0;
-            left: 0;
-            width: 100vw;
-            height: 100vh;
+            top: 0; left: 0;
+            width: 100vw; height: 100vh;
             background-color: rgba(0,0,0,0.5);
+            z-index: 100;
         }
 
         #tela-portfolio iframe {
@@ -93,7 +93,7 @@
             border: none;
             border-radius: 5px;
             cursor: pointer;
-            z-index: 10;
+            z-index: 101;
             box-shadow: 0 2px 5px rgba(0,0,0,0.2);
         }
     </style>
@@ -118,7 +118,8 @@
 
     <div id="tela-portfolio">
         <button onclick="mostrarBotoes()" class="voltar-button">Voltar</button>
-        <iframe src="public/portfolio.pdf"></iframe>
+        <!-- Caminho atualizado para o PDF dentro da pasta public -->
+        <iframe src="/public/portfolio.pdf"></iframe>
     </div>
 
     <script>
